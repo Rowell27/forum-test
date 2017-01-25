@@ -42,7 +42,7 @@ describe('AppComponent', () => {
         expect(loginpage).toBeTruthy();
     }));
 
-    it('should check validateError()', async(() => {
+    it('should create the app', async(() => {
         const fixture = TestBed.createComponent(LoginPage);
         const loginpage = fixture.componentInstance;
         expect(loginpage.validateError("ABC")).toBe(false);

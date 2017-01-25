@@ -31,7 +31,7 @@ describe('AppComponent', () => {
     let fixture = TestBed.createComponent(LoginPage);
     let  comp   =  fixture.componentInstance;
 
-    // UserService from the root injector
+      // UserService from the root injector
     let userService = TestBed.get(FireBaseService);
     
     });
@@ -41,11 +41,4 @@ describe('AppComponent', () => {
         const loginpage = fixture.debugElement.componentInstance;
         expect(loginpage).toBeTruthy();
     }));
-
-    it('should check validateError()', async(() => {
-        const fixture = TestBed.createComponent(LoginPage);
-        const loginpage = fixture.componentInstance;
-        expect(loginpage.validateError("ABC")).toBe(false);
-    }));
-
 });
